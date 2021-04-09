@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="250399" started-at="2021-04-09T12:57:02Z" finished-at="2021-04-09T13:01:13Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="250399" started-at="2021-04-09T12:57:02Z" finished-at="2021-04-09T13:01:13Z">
+      <class name="com.qa.testcases.EmployeeCreation">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.qa.testcases.EmployeeCreation@6adede5]" name="setExtent" is-config="true" duration-ms="267" started-at="2021-04-09T12:57:02Z" finished-at="2021-04-09T12:57:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.EmployeeCreation@6adede5]" name="setUp" is-config="true" duration-ms="13797" started-at="2021-04-09T12:57:03Z" finished-at="2021-04-09T12:57:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="employee_validations()[pri:1, instance:com.qa.testcases.EmployeeCreation@6adede5]" name="employee_validations" duration-ms="175236" started-at="2021-04-09T12:57:17Z" finished-at="2021-04-09T13:00:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- employee_validations -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.EmployeeCreation@6adede5]" name="tearDown" is-config="true" duration-ms="826" started-at="2021-04-09T13:00:12Z" finished-at="2021-04-09T13:00:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=employee_validations status=SUCCESS method=EmployeeCreation.employee_validations()[pri:1, instance:com.qa.testcases.EmployeeCreation@6adede5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.EmployeeCreation@6adede5]" name="setUp" is-config="true" duration-ms="11463" started-at="2021-04-09T13:00:13Z" finished-at="2021-04-09T13:00:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="update_bank_primary()[pri:2, instance:com.qa.testcases.EmployeeCreation@6adede5]" name="update_bank_primary" duration-ms="47557" started-at="2021-04-09T13:00:24Z" finished-at="2021-04-09T13:01:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update_bank_primary -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.EmployeeCreation@6adede5]" name="tearDown" is-config="true" duration-ms="787" started-at="2021-04-09T13:01:12Z" finished-at="2021-04-09T13:01:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=update_bank_primary status=SUCCESS method=EmployeeCreation.update_bank_primary()[pri:2, instance:com.qa.testcases.EmployeeCreation@6adede5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="endReport()[pri:0, instance:com.qa.testcases.EmployeeCreation@6adede5]" name="endReport" is-config="true" duration-ms="431" started-at="2021-04-09T13:01:12Z" finished-at="2021-04-09T13:01:13Z">
+          <exception class="org.apache.commons.mail.EmailException">
+            <message>
+              <![CDATA[Cannot attach file "./employee_report/Employee_report.html"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.apache.commons.mail.EmailException: Cannot attach file "./employee_report/Employee_report.html"
+at org.apache.commons.mail.MultiPartEmail.attach(MultiPartEmail.java:333)
+at com.qa.testcases.EmployeeCreation.send_email(EmployeeCreation.java:53)
+at com.qa.testcases.EmployeeCreation.endReport(EmployeeCreation.java:74)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.afterRun(TestRunner.java:725)
+at org.testng.TestRunner.run(TestRunner.java:509)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.IOException: "./employee_report/Employee_report.html" does not exist
+at org.apache.commons.mail.MultiPartEmail.attach(MultiPartEmail.java:322)
+... 26 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.apache.commons.mail.EmailException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.qa.testcases.EmployeeCreation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
